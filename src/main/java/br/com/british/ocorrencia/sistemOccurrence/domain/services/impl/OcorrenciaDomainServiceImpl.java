@@ -1,6 +1,7 @@
 package br.com.british.ocorrencia.sistemOccurrence.domain.services.impl;
 
 import java.awt.JobAttributes.DestinationType;
+import java.util.List;
 import java.util.UUID;
 
 import org.modelmapper.ModelMapper;
@@ -45,6 +46,17 @@ public class OcorrenciaDomainServiceImpl implements OcorrenciaDomainService {
 		return response;
 		
 			
+	}
+
+
+
+
+
+
+	@Override
+	public List<OcorrenciaResponseDTO> Consultar() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
