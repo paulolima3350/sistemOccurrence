@@ -3,6 +3,7 @@ package br.com.british.ocorrencia.sistemOccurrence.domain.services.impl;
 import java.awt.JobAttributes.DestinationType;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.ThreadLocalRandom;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,7 @@ public class OcorrenciaDomainServiceImpl implements OcorrenciaDomainService {
 	
 		
 		Ocorrencia ocorrencia = modelMapper.map(request, Ocorrencia.class);
-		ocorrencia.setId(UUID.randomUUID());
+		ocorrencia.setId(ThreadLocalRandom.current().nextLong());
 
 		
 		ocorrenciaRepository.save(ocorrencia);

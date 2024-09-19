@@ -26,7 +26,7 @@ public class Ocorrencia {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) // Estratégia de geração do ID
 	@Column(name = "id") // Nome da coluna para o ID
-	private UUID id;
+	private Long id;
 
 	@Column(name = "nome") // Nome da coluna para o nome
 	private String nome;
