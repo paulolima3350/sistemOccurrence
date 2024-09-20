@@ -28,8 +28,8 @@ public class Ocorrencia {
 	@Column(name = "id") // Nome da coluna para o ID
 	private Long id;
 
-	@Column(name = "nome") // Nome da coluna para o nome
-	private String nome;
+	@Column(name = "descricao") // Nome da coluna para o nome
+	private String descricao;
 
 	@Enumerated(EnumType.STRING)
 	@Column(name = "status") // Nome da coluna para o status
@@ -41,7 +41,7 @@ public class Ocorrencia {
 
 	@ManyToOne
 	@JoinColumn(name = "usuario_criador_id") // Nome da coluna para a chave estrangeira do usuário criador
-	private UsuarioCriador usuarioCriador;
+	private UsuarioCriador usuarioCriado;
 
 	@Enumerated(EnumType.STRING)
 	@Column(name = "unidade") // Nome da coluna para a unidade

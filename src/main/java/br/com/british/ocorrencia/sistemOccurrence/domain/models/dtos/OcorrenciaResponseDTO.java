@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 public class OcorrenciaResponseDTO {
 
-	private String nome;
+	private String descricao;
     private Status status;
     private TipoOcorrencia tipoOcorrencia;
     private String usuarioCriadorNome; // Nome do usuário criador

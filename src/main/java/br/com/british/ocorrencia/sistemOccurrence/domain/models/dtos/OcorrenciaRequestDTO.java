@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 public class OcorrenciaRequestDTO {
 
-	private String nome;
+	private String descricao;
     private Status status;
     private TipoOcorrencia tipoOcorrencia;
     private Long usuarioCriadorId; // Verifique se está como UUID

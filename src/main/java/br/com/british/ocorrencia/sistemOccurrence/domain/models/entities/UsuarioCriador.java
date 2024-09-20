@@ -16,18 +16,9 @@ public class UsuarioCriador {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id_user", columnDefinition = "BINARY(16)")
-    private UUID idUser;
-
+    private Long idUser;
+    private Long matricula;
     private String nome;
+    
 
-    // Default constructor required by JPA
-    public UsuarioCriador() {
-    }
-
-    // Parameterized constructor for convenience (optional)
-    public UsuarioCriador(UUID idUser, String nome) {
-        this.idUser = idUser;
-        this.nome = nome;
-    }
 }
