@@ -11,6 +11,8 @@ import lombok.Data;
 @Data
 public class OcorrenciaRequestDTO {
     
+	
+	private String descricao;
     private Status status;
     private TipoOcorrencia tipoOcorrencia;
     private Long usuarioCriadorId; 
